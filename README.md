@@ -1,22 +1,63 @@
-# Maven-Market-Sales-Analysis-1998:
-Developed an interactive Power BI dashboard for Maven Market, a multinational grocery retailer, focused on uncovering insights from 1998 sales data across the U.S., Canada, and Mexico
-Maven Market Sales Analysis (1998):
+# Maven Market Sales Analysis (1998)
 
-💡 Key Analytics Features:
-·      Identified and ranked top 30 product brands by total transactions.
-·      Built data models and relationships for clean schema navigation.
-·      Created custom DAX measures and calculated columns to fine-tune data and ensure accurate reporting.
-·      KPI cards to compare monthly profit & return trends (Current vs. Previous Month).
-·      Regional sales breakdown using map visuals and slicers.
-·      Gauge chart to monitor revenue against targets.
-·      Report-level filter applied to focus exclusively on 1998 data.
-·      Enabled user-driven analysis with slicers, drill-throughs, and bookmarks for guided storytelling.
+An interactive Power BI dashboard built using Power BI & Excel to analyze 1998 sales data for Maven Market, a multinational grocery retailer operating across the U.S., Canada, and Mexico.
 
-📌 Business Insights:
-·      Portland crossed 1,000 sales in December — strong year-end performance
-·      High Top product returns in Mexico doubled (4 → 8), with a 1.2% return rate
-·      Strongest overall profit margin (63.55%) by Plato product in 1998
+---
 
-🔧 Tools Used: Power BI (DAX, KPI Cards, Report Filters, Slicers, Bookmarks, Drill-throughs)
+## 📂 Project Structure
+📁 Maven-Market-Sales-Analysis-1998  
+│  
+├── 📊 Maven Market.pbix          # Power BI dashboard file  
+├── 📄 README.md                  # Project documentation
 
-🎯 Outcome: This was a great learning experience in building from scratch — from cleaning the data to designing a functional and visually engaging report and delivered a clean, insight-rich report to support strategic decisions, demonstrating a strong grasp of both business context and analytical tools.
+---
+
+## 💡 Key Analytics Features
+- Identified and ranked top 30 product brands by total transactions  
+- Built clean data models with proper relationships  
+- Created custom DAX measures and calculated columns  
+- KPI cards comparing monthly profit & returns (Current vs Previous Month)  
+- Regional sales analysis using map visuals  
+- Revenue vs target tracking using gauge charts  
+- Report-level filter applied for 1998 data only  
+- Interactive slicers, drill-throughs, and bookmarks for storytelling  
+
+---
+
+## 🧩 Data Model Overview
+Star schema design used for optimized analysis:
+
+Fact Tables:
+- Sales
+- Returns
+
+Dimension Tables:
+- Products
+- Customers
+- Stores
+- Calendar
+
+Relationships:
+- Sales[ProductID] → Products[ProductID]
+- Sales[StoreID] → Stores[StoreID]
+- Sales[Date] → Calendar[Date]
+- Returns linked to Sales via Transaction ID
+
+---
+
+## 📐 Key DAX Measures
+```DAX
+Total Sales :=
+SUM ( Sales[Sales_Amount] )
+
+Total Profit :=
+SUM ( Sales[Profit] )
+
+Profit Margin % :=
+DIVIDE ( [Total Profit], [Total Sales] )
+
+Monthly Profit Change :=
+[Current Month Profit] - [Previous Month Profit]
+
+Return Rate % :=
+DIVIDE ( [Total Returns], [Total Transactions] )
