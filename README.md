@@ -38,7 +38,6 @@ Relationships:
 ---
 
 ## 📐 Key DAX Measures
-```DAX
 Total Sales :=
 SUM ( Sales[Sales_Amount] )
 
