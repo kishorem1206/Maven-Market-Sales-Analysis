@@ -54,10 +54,14 @@ Monthly Profit Change :=
 Return Rate % :=
 DIVIDE ( [Total Returns], [Total Transactions] )
 
-##📌 Business Insights:
+---
+
+## 📌 Business Insights:
 1. Portland crossed 1,000 sales in December — strong year-end performance
 2. High Top product returns in Mexico doubled (4 → 8), with a 1.2% return rate
 3. Strongest overall profit margin (63.55%) by Plato product in 1998
 
-##🔧 Tools Used:
+---
+
+## 🔧 Tools Used:
 Power BI (DAX, KPI Cards, Report Filters, Slicers, Bookmarks, Drill-throughs), Excel(Data cleaning)
