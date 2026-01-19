@@ -4,14 +4,6 @@ An interactive Power BI dashboard built using Power BI & Excel to analyze 1998 s
 
 ---
 
-## 📂 Project Structure
-📁 Maven-Market-Sales-Analysis-1998  
-│  
-├── 📊 Maven Market.pbix          # Power BI dashboard file  
-├── 📄 README.md                  # Project documentation
-
----
-
 ## 💡 Key Analytics Features
 - Identified and ranked top 30 product brands by total transactions  
 - Built clean data models with proper relationships  
@@ -61,3 +53,11 @@ Monthly Profit Change :=
 
 Return Rate % :=
 DIVIDE ( [Total Returns], [Total Transactions] )
+
+##📌 Business Insights:
+1. Portland crossed 1,000 sales in December — strong year-end performance
+2. High Top product returns in Mexico doubled (4 → 8), with a 1.2% return rate
+3. Strongest overall profit margin (63.55%) by Plato product in 1998
+
+##🔧 Tools Used:
+Power BI (DAX, KPI Cards, Report Filters, Slicers, Bookmarks, Drill-throughs), Excel(Data cleaning)
