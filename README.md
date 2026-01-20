@@ -16,6 +16,12 @@ An interactive Power BI dashboard built using Power BI & Excel to analyze 1998 s
 
 ---
 
+## Demo Video
+
+[![Watch Demo](https://github.com/user-attachments/assets/8c806685-2e0d-498d-bd94-4496cb3ff55d)](https://drive.google.com/file/d/1-RpuiPjUV8YsfP7lNp-Dq1UNkAjUEEWi/view?usp=sharing)
+
+---
+
 ## 🧩 Data Model Overview
 Star schema design used for optimized analysis:
 
