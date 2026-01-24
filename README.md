@@ -16,6 +16,12 @@ An interactive Power BI dashboard built using Power BI & Excel to analyze 1998 s
 
 ---
 
+## Live Dashboard
+
+(https://app.powerbi.com/links/W7D20piTiy?ctid=432e342b-be73-47f9-801d-951049a930af&pbi_source=linkShare&bookmarkGuid=9849302d-e638-470b-9f64-d295894b6131)
+
+---
+
 ## Demo Video
 
 [![Watch Demo](https://github.com/user-attachments/assets/8c806685-2e0d-498d-bd94-4496cb3ff55d)](https://drive.google.com/file/d/1-RpuiPjUV8YsfP7lNp-Dq1UNkAjUEEWi/view?usp=sharing)
